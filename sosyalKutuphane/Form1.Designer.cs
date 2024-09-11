@@ -73,11 +73,11 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.textBox1.Location = new System.Drawing.Point(367, 441);
+            this.textBox1.ForeColor = System.Drawing.Color.Gray;
+            this.textBox1.Location = new System.Drawing.Point(323, 441);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(280, 55);
+            this.textBox1.Size = new System.Drawing.Size(374, 55);
             this.textBox1.TabIndex = 6;
             this.textBox1.Text = "TC. Kimlik No";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -90,11 +90,11 @@
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.textBox2.Location = new System.Drawing.Point(367, 526);
+            this.textBox2.ForeColor = System.Drawing.Color.Gray;
+            this.textBox2.Location = new System.Drawing.Point(323, 519);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(280, 55);
+            this.textBox2.Size = new System.Drawing.Size(374, 55);
             this.textBox2.TabIndex = 7;
             this.textBox2.Text = "Şifre";
             // 
@@ -106,9 +106,9 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(433, 628);
+            this.button1.Location = new System.Drawing.Point(446, 635);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 56);
+            this.button1.Size = new System.Drawing.Size(140, 50);
             this.button1.TabIndex = 4;
             this.button1.Text = "GİRİŞ YAP";
             this.button1.UseVisualStyleBackColor = false;
@@ -120,9 +120,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(433, 703);
+            this.button2.Location = new System.Drawing.Point(446, 700);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(140, 56);
+            this.button2.Size = new System.Drawing.Size(140, 50);
             this.button2.TabIndex = 5;
             this.button2.Text = "KAYIT OL";
             this.button2.UseVisualStyleBackColor = true;
@@ -138,9 +138,10 @@
             this.gradientPanel1.Controls.Add(this.button2);
             this.gradientPanel1.Controls.Add(this.button1);
             this.gradientPanel1.Controls.Add(this.pictureBox1);
-            this.gradientPanel1.Location = new System.Drawing.Point(1, -2);
+            this.gradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.gradientPanel1.Name = "gradientPanel1";
-            this.gradientPanel1.Size = new System.Drawing.Size(1003, 1023);
+            this.gradientPanel1.Size = new System.Drawing.Size(994, 1016);
             this.gradientPanel1.TabIndex = 0;
             this.gradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.gradientPanel1_Paint);
             // 

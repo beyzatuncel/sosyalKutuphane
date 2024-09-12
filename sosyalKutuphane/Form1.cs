@@ -55,12 +55,41 @@ namespace sosyalKutuphane
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            if (tcText.Text == "TC. Kimlik No")
+            {
+                tcText.Text = "";
+                tcText.ForeColor = Color.Black;
+            }
+            
 
         }
+        
 
         private void gradientPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            uyelikFormu form2 = new uyelikFormu();
+
+            // Eğer formu modal olarak açmak isterseniz:
+            form2.ShowDialog();  // Bu, Form2 kapanana kadar Form1'in kilitlenmesini sağlar
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            kullaniciHesabi form3 = new kullaniciHesabi();
+            // Eğer formu modal olarak açmak isterseniz:
+            form3.Show();  // Bu, Form2 kapanana kadar Form1'in kilitlenmesini sağlar
+            this.Hide();
+            
         }
     }
 }

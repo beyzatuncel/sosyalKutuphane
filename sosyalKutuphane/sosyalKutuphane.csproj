@@ -58,10 +58,25 @@
     <Compile Include="gradientPanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="kullaniciHesabi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullaniciHesabi.Designer.cs">
+      <DependentUpon>kullaniciHesabi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="uyelikFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uyelikFormu.Designer.cs">
+      <DependentUpon>uyelikFormu.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullaniciHesabi.resx">
+      <DependentUpon>kullaniciHesabi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -73,6 +88,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="uyelikFormu.resx">
+      <DependentUpon>uyelikFormu.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -100,6 +118,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\png1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kapat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kapat1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kapat2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

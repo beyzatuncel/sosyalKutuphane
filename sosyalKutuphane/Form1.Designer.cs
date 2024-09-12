@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.gradientPanel1 = new sosyalKutuphane.gradientPanel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.sifreText = new System.Windows.Forms.TextBox();
+            this.tcText = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.elipseTool1 = new ElipseToolDemo.ElipseTool();
             this.elipseTool2 = new ElipseToolDemo.ElipseTool();
             this.elipseTool3 = new ElipseToolDemo.ElipseTool();
             this.elipseTool4 = new ElipseToolDemo.ElipseTool();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.elipseTool5 = new ElipseToolDemo.ElipseTool();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.elipseTool6 = new ElipseToolDemo.ElipseTool();
-            this.button1 = new System.Windows.Forms.Button();
             this.elipseTool7 = new ElipseToolDemo.ElipseTool();
-            this.button2 = new System.Windows.Forms.Button();
-            this.gradientPanel1 = new sosyalKutuphane.gradientPanel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.elipseTool8 = new ElipseToolDemo.ElipseTool();
             this.elipseTool9 = new ElipseToolDemo.ElipseTool();
             this.gradientPanel1.SuspendLayout();
@@ -50,91 +50,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // elipseTool1
-            // 
-            this.elipseTool1.CornerRadius = 90;
-            this.elipseTool1.TargetControl = null;
-            // 
-            // elipseTool2
-            // 
-            this.elipseTool2.CornerRadius = 100;
-            this.elipseTool2.TargetControl = null;
-            // 
-            // elipseTool3
-            // 
-            this.elipseTool3.CornerRadius = 100;
-            this.elipseTool3.TargetControl = null;
-            // 
-            // elipseTool4
-            // 
-            this.elipseTool4.CornerRadius = 20;
-            this.elipseTool4.TargetControl = this.textBox1;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.ForeColor = System.Drawing.Color.Gray;
-            this.textBox1.Location = new System.Drawing.Point(323, 441);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(374, 55);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.Text = "TC. Kimlik No";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // elipseTool5
-            // 
-            this.elipseTool5.CornerRadius = 20;
-            this.elipseTool5.TargetControl = this.textBox2;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.ForeColor = System.Drawing.Color.Gray;
-            this.textBox2.Location = new System.Drawing.Point(323, 519);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(374, 55);
-            this.textBox2.TabIndex = 7;
-            this.textBox2.Text = "Şifre";
-            // 
-            // elipseTool6
-            // 
-            this.elipseTool6.CornerRadius = 40;
-            this.elipseTool6.TargetControl = this.button1;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(446, 635);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 50);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "GİRİŞ YAP";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // elipseTool7
-            // 
-            this.elipseTool7.CornerRadius = 40;
-            this.elipseTool7.TargetControl = this.button2;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(446, 700);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(140, 50);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "KAYIT OL";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // gradientPanel1
             // 
             this.gradientPanel1.BackgroundImage = global::sosyalKutuphane.Properties.Resources.OIG4;
             this.gradientPanel1.ColorBottom = System.Drawing.Color.Transparent;
             this.gradientPanel1.ColorTop = System.Drawing.Color.Transparent;
             this.gradientPanel1.Controls.Add(this.pictureBox3);
-            this.gradientPanel1.Controls.Add(this.textBox2);
-            this.gradientPanel1.Controls.Add(this.textBox1);
+            this.gradientPanel1.Controls.Add(this.sifreText);
+            this.gradientPanel1.Controls.Add(this.tcText);
             this.gradientPanel1.Controls.Add(this.button2);
             this.gradientPanel1.Controls.Add(this.button1);
             this.gradientPanel1.Controls.Add(this.pictureBox1);
@@ -155,6 +78,59 @@
             this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
             // 
+            // sifreText
+            // 
+            this.sifreText.BackColor = System.Drawing.Color.White;
+            this.sifreText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.sifreText.ForeColor = System.Drawing.Color.Gray;
+            this.sifreText.Location = new System.Drawing.Point(323, 519);
+            this.sifreText.Multiline = true;
+            this.sifreText.Name = "sifreText";
+            this.sifreText.Size = new System.Drawing.Size(374, 50);
+            this.sifreText.TabIndex = 7;
+            this.sifreText.Text = "Şifre";
+            this.sifreText.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.sifreText.Enter += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // tcText
+            // 
+            this.tcText.BackColor = System.Drawing.Color.White;
+            this.tcText.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tcText.ForeColor = System.Drawing.Color.Gray;
+            this.tcText.Location = new System.Drawing.Point(323, 441);
+            this.tcText.Multiline = true;
+            this.tcText.Name = "tcText";
+            this.tcText.Size = new System.Drawing.Size(374, 50);
+            this.tcText.TabIndex = 6;
+            this.tcText.Text = "TC. Kimlik No";
+            this.tcText.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.tcText.Enter += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button2.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.button2.Location = new System.Drawing.Point(446, 700);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(140, 50);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "KAYIT OL";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.button1.Location = new System.Drawing.Point(446, 635);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(140, 50);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "GİRİŞ YAP";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -165,6 +141,41 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            // 
+            // elipseTool1
+            // 
+            this.elipseTool1.CornerRadius = 90;
+            this.elipseTool1.TargetControl = null;
+            // 
+            // elipseTool2
+            // 
+            this.elipseTool2.CornerRadius = 100;
+            this.elipseTool2.TargetControl = null;
+            // 
+            // elipseTool3
+            // 
+            this.elipseTool3.CornerRadius = 100;
+            this.elipseTool3.TargetControl = null;
+            // 
+            // elipseTool4
+            // 
+            this.elipseTool4.CornerRadius = 20;
+            this.elipseTool4.TargetControl = this.tcText;
+            // 
+            // elipseTool5
+            // 
+            this.elipseTool5.CornerRadius = 20;
+            this.elipseTool5.TargetControl = this.sifreText;
+            // 
+            // elipseTool6
+            // 
+            this.elipseTool6.CornerRadius = 40;
+            this.elipseTool6.TargetControl = this.button1;
+            // 
+            // elipseTool7
+            // 
+            this.elipseTool7.CornerRadius = 40;
+            this.elipseTool7.TargetControl = this.button2;
             // 
             // elipseTool8
             // 
@@ -200,8 +211,8 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private gradientPanel gradientPanel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox sifreText;
+        private System.Windows.Forms.TextBox tcText;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private ElipseToolDemo.ElipseTool elipseTool1;
